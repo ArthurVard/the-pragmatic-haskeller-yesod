@@ -13,4 +13,7 @@
 
 /list/#!TodoListId/newtask   NewTaskR           POST
 /task/#TaskId/done           DoneTaskR          POST
-/task/#TaskId/delete         DeleteTaskR        POST
+/task/#TaskId/delete         DeleteTaskR        POST 
+/recipe/show                 ShowRecipeR        GET POST
+/recipe/store                StoreRecipeR       POST
+/recipe/new                  NewRecipeR         GET POST

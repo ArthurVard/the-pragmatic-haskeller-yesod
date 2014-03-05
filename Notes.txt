@@ -1,0 +1,12 @@
+
+##Error A:
+Starting development server...
+ghc: D:\haskell\yesod-sites\recipe-yesod\dist\build\libHSRecipeLiloArt-0.0.0.a: unknown symbol `_RecipeLiloArtzm0zi0zi0_
+HandlerziDSLziParser_recipe_closure'
+ghc: unable to load package `RecipeLiloArt-0.0.0'
+Exit code: ExitFailure 1
+
+    *Solution
+     read carefully warnings:
+    --WARNING: the following source files are not listed in exposed-modules or other-modules: .\Handler\DSL\Parser.hs
+     add module Handler.DSL.Parser to exposed module's list in cabal file

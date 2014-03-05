@@ -1,24 +1,24 @@
 Default: &defaults
-  user: ToDoList
-  password: ToDoList
+  user: user
+  password: pass
   host: localhost
-  database: ToDoList
+  database: RecipeYesod
   connections: 10
 
 Development:
   <<: *defaults
 
 Testing:
-  database: ToDoList_test
+  database: RecipeYesod_test
   <<: *defaults
 
 Staging:
-  database: ToDoList_staging
+  database: RecipeYesod_staging
   connections: 100
   <<: *defaults
 
 Production:
-  database: ToDoList_production
+  database: RecipeYesod_production
   connections: 100
   host: localhost
   <<: *defaults
