@@ -1,0 +1,8 @@
+ var editor = CodeMirror.fromTextArea(document.getElementById("dsl"), {
+        lineNumbers: true,
+        styleActiveLine: true,
+        theme: "ambiance",
+        mode: "recipe"
+      });
+editor.setSize(500,350);
+editor.setCursor(cursorLine-1)

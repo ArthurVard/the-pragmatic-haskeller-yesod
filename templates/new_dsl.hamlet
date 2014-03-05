@@ -1,0 +1,9 @@
+<div class="control-group span5">
+  <form method="post" action=@{NewRecipeR} >
+    <label class="control-label" for="dsl">Submit your recipe</label>
+    <div class="controls">
+      <textarea class="input-xlarge span5" name="dsl" id="dsl">
+            #{initialDsl}
+      <br></br>
+        <button type="submit" class="span5 btn btn-primary">
+            Save your recipe!
