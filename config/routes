@@ -5,15 +5,6 @@
 /robots.txt RobotsR GET
 
 /                            HomeR              GET
-
-/lists                       IndexTodoListR     GET
-/list/new                    NewTodoListR       POST
-/list/#!TodoListId           TodoListR          GET
-/list/#!TodoListId/delete    DelTodoListR       POST
-
-/list/#!TodoListId/newtask   NewTaskR           POST
-/task/#TaskId/done           DoneTaskR          POST
-/task/#TaskId/delete         DeleteTaskR        POST 
 /recipe/show                 ShowRecipeR        GET POST
 /recipe/store                StoreRecipeR       POST
 /recipe/new                  NewRecipeR         GET POST

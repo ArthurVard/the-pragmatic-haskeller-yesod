@@ -9,15 +9,6 @@ Email
     verkey Text Maybe
     UniqueEmail email
     
-TodoList
-    title Text
-    owner UserId
-
-Task
-    title Text
-    done Bool default=false
-    todoList TodoListId
-
 Recipe
     recipeName Text
     ingredients [Ingredient]

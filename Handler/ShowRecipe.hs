@@ -5,16 +5,10 @@ import Import
 import Handler.JSON.Parser
 import Data.Aeson
 import qualified Data.ByteString.Lazy as BL
-import Data.Text as T
-
 
 {-===========================================================================-}
 {-                                  HANDLERS                                 -}
 {-===========================================================================-}
-
-
-
-
 
 getShowRecipeR =  do
     toParse <- liftIO $ BL.readFile "recipe.json"

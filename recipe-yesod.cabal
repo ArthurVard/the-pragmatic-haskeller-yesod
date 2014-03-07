@@ -20,8 +20,6 @@ library
                      Settings.StaticFiles
                      Settings.Development
                      Handler.Home
-                     Handler.TodoList
-                     Handler.User
                      Handler.ShowRecipe
                      Handler.StoreRecipe
                      Handler.NewRecipe

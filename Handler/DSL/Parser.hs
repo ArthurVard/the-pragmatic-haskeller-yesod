@@ -47,12 +47,12 @@ syntacticSugar s = (string s *> (pure . Just $ s)) <|> pure Nothing
 
 ingredient :: Parser Ingredient
 ingredient = do
-    qt <- lexeme int
-    ms <- lexeme measureP
-    lexeme (syntacticSugar "of")
+    qt   <- lexeme int
+    ms   <- lexeme measureP
+    _    <- lexeme (syntacticSugar "of")
     name <- lexeme stringLike
-    lexeme (syntacticSugar "and")
-    string "\r\n"
+    _    <- lexeme (syntacticSugar "and")
+    _    <- string "\r\n"
     return $ Ingredient (T.pack name) qt ms
 
 -- Step
@@ -69,7 +69,7 @@ step = do
 -------------------------------------------------------------------------------
 durationP :: Parser Duration
 durationP = do
-    lexeme (string "for")
+    _ <- lexeme (string "for")
     d <- lexeme int
     u <- lexeme durationUnit
     return $ Duration d (T.pack u)

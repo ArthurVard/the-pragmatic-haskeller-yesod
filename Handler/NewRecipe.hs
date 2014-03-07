@@ -3,11 +3,11 @@
 module Handler.NewRecipe where
 
 import Import
-import Control.Lens
+--import Control.Lens
 import Data.Aeson
 import Handler.DSL.Parser
 import qualified Data.Text as T (pack, unlines, unpack ) --already imported in Import module
-import qualified Data.ByteString.Char8 as BC (unpack, unlines, pack)
+--import qualified Data.ByteString.Char8 as BC (unpack, unlines, pack)
 import Text.Parsec (parse)
 import Data.Aeson.Encode.Pretty (encodePretty)
 import Data.ByteString.Lazy (toStrict)
@@ -43,8 +43,8 @@ getNewRecipeR = defaultLayout $(widgetFile "new_dsl")
 --recipe2json :: Recipe -> Text
 --recipe2json = decodeUtf8 . toStrict . encodePretty
 
-makeLenses ''Step
-makeLenses ''Recipe
+--makeLenses ''Step
+--makeLenses ''Recipe
 -- Uses lenses to incrementally increase the order
 --correctOrder :: Recipe -> Recipe
 --correctOrder r = r { _steps = newSteps (_steps r)}
